@@ -1,0 +1,62 @@
+/* Chefs.css */
+
+/* Styles for desktop view */
+.chef-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 20px;
+  }
+  
+  .chef-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .chef-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chef-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .chef-details {
+    margin-top: 10px;
+  }
+  
+  .view-recipe-button {
+    background-color: #dc97cd;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .view-recipe-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styles for tablet view (e.g., for screens up to 768px wide) */
+  @media (max-width: 768px) {
+    .chef-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Styles for mobile view (e.g., for screens up to 480px wide) */
+  @media (max-width: 480px) {
+    .chef-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
