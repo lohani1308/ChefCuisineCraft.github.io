@@ -13,7 +13,7 @@ const Chefs = lazy(() => import('./components/Chefs/Chefs'));
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navbar/>
       <Carousel />
       {/* Wrap the lazy-loaded component in Suspense */}
       <Suspense fallback={<LoadingSpinner />}>

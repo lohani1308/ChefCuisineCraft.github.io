@@ -5,6 +5,7 @@ import LoginOverlay from '../Login/LoginOverlay'; // Import the LoginOverlay com
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const [isOverlay,setisOverlay] = useState(true); // State to control the Login overlay
+  
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -16,8 +17,7 @@ function Navbar() {
 
   return (
     <div>
-        <nav className="navbar">
-            
+        <nav className="navbar"> 
         <div className="navbar-logo">ChefCuisineCraft</div>
         <div className={`navbar-links ${showMenu ? 'show-menu' : ''}`}>
             <a href="/">Home</a>
@@ -35,7 +35,10 @@ function Navbar() {
         
         </nav>
         {isOverlay && (
-            <LoginOverlay onClose={closeLoginOverlay} />
+            <LoginOverlay 
+                onClose={closeLoginOverlay} 
+                setisOverlay={setisOverlay}
+            />
         )} 
     </div>
   );

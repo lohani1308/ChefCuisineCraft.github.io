@@ -16,7 +16,7 @@ function Footer() {
               Twitter
             </a>
           </div>
-          <p>&copy; 2023 Your Company Name</p>
+          <p style={{ fontWeight: '20px' }}>&copy; 2023 ChefCuisineCraft</p>
         </div>
       
     </footer>

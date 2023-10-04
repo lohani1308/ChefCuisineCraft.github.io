@@ -2,7 +2,7 @@
 .footer {
     height: 30vh;
     background-color: rgb(210, 129, 210);
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@
   /* Style the social media links */
   .social-media a {
     text-decoration: none;
-    color: white;
+    color: black;
     margin: 0 10px;
     transition: color 0.3s ease; /* Add a smooth color transition */
   }

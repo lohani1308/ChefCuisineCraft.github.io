@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Login.css'; // Import your CSS file for styling
+import Register from '../Register/Register';
 
 function LoginOverlay({ onClose }) {
+  const [isRegisterOpen, setIsRegisterOpen] = useState(false);
 
-  const handleClick=()=>{
-
+  const handleClick = () => {
+    setIsRegisterOpen(true);
   }
 
   return (
@@ -26,12 +28,11 @@ function LoginOverlay({ onClose }) {
           <button className="button" type="submit">Login</button>
         </form>
         <div className="or-divider">Or</div>
-        <button className="google-button">Login with Google</button>
-        <button className="github-button">Login with GitHub</button>
-        <div onClick={ handleClick } className="registration-link">
+        <button className="registration-link" onClick={handleClick}>
           Don't have an account? <span>Register here</span>
-        </div>
+        </button>
       </div>
+      {isRegisterOpen && <Register onClose={()=>setIsRegisterOpen(false)}/>}
     </div>
   );
 }

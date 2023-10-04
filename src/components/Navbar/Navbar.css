@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: rgb(223, 167, 223);
-    color: white;
+    color: black;
     padding: 10px 20px;
   }
   
@@ -22,7 +22,7 @@
   
   .navbar-links a {
     text-decoration: none;
-    color: white;
+    color: black;
   }
   
   .navbar-profile img {
@@ -40,7 +40,7 @@
   .bar {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: black;
     margin: 3px 0;
     transition: 0.4s;
   }

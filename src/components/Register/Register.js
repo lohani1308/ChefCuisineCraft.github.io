@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Register.css';
 
-function Register() {
+function Register( {onClose} ) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -44,6 +44,9 @@ function Register() {
   return (
     <div className="container"> {/* Add container class */}
       <div className="form-container">
+          <span className="close-button" onClick={onClose}>
+            &times;
+          </span>
         <h2>Sign Up</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">

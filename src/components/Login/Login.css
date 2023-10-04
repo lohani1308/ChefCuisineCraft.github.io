@@ -60,7 +60,7 @@ h2 {
 
 /* Example styling for buttons */
 .button {
-  background-color: #e50914;
+  background-color: #ea87cc;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -71,5 +71,5 @@ h2 {
 }
 
 .button:hover {
-  background-color: #b50710;
+  background-color: #d71fa3;
 }
