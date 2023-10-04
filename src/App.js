@@ -6,6 +6,7 @@ import LoginOverlay from './components/Login/LoginOverlay';
 import Carousel from './components/Carousel/Carousel';
 import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner'; // Import the loading spinner component
 import Footer from './components/Footer/Footer';
+import About from './components/AboutUs/About';
 
 // Lazy load the Chefs component
 const Chefs = lazy(() => import('./components/Chefs/Chefs'));
@@ -19,6 +20,7 @@ function App() {
       <Suspense fallback={<LoadingSpinner />}>
         <Chefs />
       </Suspense>
+      <About />
       <Footer />
     </div>
   );
