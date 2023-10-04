@@ -1,0 +1,136 @@
+/* Overlay */
+.chef-details-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    pointer-events: auto;
+  }
+  
+  /* Content within the overlay */
+  .chef-details-content {
+    background-color: #fff;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 1000;
+    max-height: 80vh; /* Limit the maximum height */
+    overflow-y: auto; /* Enable vertical scrollbar when needed */
+    text-align: center; /* Center-align content */
+  }
+  
+  /* Close button */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #333; /* Change the color as needed */
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    color: #f00; /* Change the color on hover if desired */
+  }
+  
+  /* Chef image */
+  .chef-details-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Make the image round */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  }
+  
+  /* Chef name */
+  .chef-details-content h2 {
+    font-size: 28px;
+    margin: 10px 0;
+    color: #333; /* Text color */
+  }
+  
+  /* Chef details */
+  .chef-details-content p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555; /* Text color */
+  }
+  
+  /* Like button */
+  .like-button {
+    background-color: #f0f0f0; /* Background color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    color: #333; /* Text color */
+  }
+  
+  .like-button:hover {
+    background-color: #ff6b6b; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+  }
+  
+  .like-button.liked {
+    background-color: #ff6b6b; /* Liked button background color */
+    color: #fff; /* Liked button text color */
+    cursor: not-allowed; /* Disable the button when liked */
+  }
+  
+  /* Recipe cards */
+  .recipe-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+  }
+  
+  /* Recipe name */
+  .recipe-card h4 {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+  
+  /* Recipe description */
+  .recipe-card p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555; /* Text color */
+  }
+  
+  /* Ingredients and instructions */
+  .recipe-card h5 {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  
+  /* Ingredient list */
+  .recipe-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .recipe-card ul li {
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+  
+  /* Instruction list */
+  .recipe-card ol {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
