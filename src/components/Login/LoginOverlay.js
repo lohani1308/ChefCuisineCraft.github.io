@@ -1,7 +1,12 @@
 import React from 'react';
 import './Login.css'; // Import your CSS file for styling
 
-function LoginOverlay({ onClose}) {
+function LoginOverlay({ onClose }) {
+
+  const handleClick=()=>{
+
+  }
+
   return (
     <div className="login-overlay">
       <div className="login-container">
@@ -23,7 +28,7 @@ function LoginOverlay({ onClose}) {
         <div className="or-divider">Or</div>
         <button className="google-button">Login with Google</button>
         <button className="github-button">Login with GitHub</button>
-        <div className="registration-link">
+        <div onClick={ handleClick } className="registration-link">
           Don't have an account? <span>Register here</span>
         </div>
       </div>
