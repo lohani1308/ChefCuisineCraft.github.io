@@ -5,6 +5,8 @@ import LoginOverlay from '../Login/LoginOverlay'; // Import the LoginOverlay com
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const [isOverlay,setisOverlay] = useState(true); // State to control the Login overlay
+  const [loggedin,setLoggedin]=useState(false);
+  const [profilename,setProfileName]=useState('');
   
 
   const toggleMenu = () => {
@@ -25,6 +27,7 @@ function Navbar() {
             <a href="/login" onClick={() => setisOverlay(false)}>Login</a> 
         </div>
         <div className="navbar-profile">
+            {loggedin && (<div>{profilename}</div>) }
             <img src="profile.jpg" alt="Profile" />
         </div>
         <div className="hamburger" onClick={toggleMenu}>
@@ -38,6 +41,8 @@ function Navbar() {
             <LoginOverlay 
                 onClose={closeLoginOverlay} 
                 setisOverlay={setisOverlay}
+                setLoggedin={setLoggedin}
+                setProfileName={setProfileName}
             />
         )} 
     </div>

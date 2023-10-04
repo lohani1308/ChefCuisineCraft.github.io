@@ -7,8 +7,9 @@ function Register( {onClose} ) {
   const [password, setPassword] = useState('');
   const [photo, setPhoto] = useState(null);
   const [errors, setErrors] = useState({});
+  const [success,setSuccess]=useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e) => { 
     e.preventDefault();
     const newErrors = {};
 
@@ -40,6 +41,24 @@ function Register( {onClose} ) {
     const selectedPhoto = e.target.files[0];
     setPhoto(selectedPhoto);
   };
+
+  const handleRegister=async()=>{
+    const data=await fetch('https://chef-project-cfcc5-default-rtdb.firebaseio.com/users.json',{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json'
+      },
+      body:JSON.stringify({
+        name,
+        email,
+        password,
+        photo
+      })
+      
+    });
+
+    setSuccess(true);
+  }
 
   return (
     <div className="container"> {/* Add container class */}
@@ -81,8 +100,10 @@ function Register( {onClose} ) {
           )}
           {errors.emptyFields && <div className="error">{errors.emptyFields}</div>}
           <div className="button-container">
-            <button type="submit">Sign Up</button>
+            <button type="submit" onClick={ handleRegister }>Sign Up</button>
           </div>
+
+          {success && <div style={{ marginTop:"2%",textAlign:"center", color:'green' }}>Successfully Registered!</div>}
         </form>
       </div>
     </div>
