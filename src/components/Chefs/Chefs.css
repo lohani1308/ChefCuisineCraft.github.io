@@ -60,4 +60,22 @@
       grid-template-columns: 1fr;
     }
   }
+
+  .falling-text {
+    font-size: 48px;
+    text-align: center;
+    position: relative;
+    animation: fall 2s ease-in-out infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
   

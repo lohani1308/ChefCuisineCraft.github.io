@@ -7,20 +7,28 @@ import Carousel from './components/Carousel/Carousel';
 import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner'; // Import the loading spinner component
 import Footer from './components/Footer/Footer';
 import About from './components/AboutUs/About';
+import { useRef } from 'react';
 
 // Lazy load the Chefs component
 const Chefs = lazy(() => import('./components/Chefs/Chefs'));
 
 function App() {
+
+  const aboutRef=useRef();
+  const homeRef=useRef();
+
   return (
     <div className="App">
-      <Navbar/>
-      <Carousel />
+      <Navbar 
+        aboutRef={aboutRef}
+        homeRef={homeRef}
+        />
+      <Carousel homeRef={homeRef}/>
       {/* Wrap the lazy-loaded component in Suspense */}
       <Suspense fallback={<LoadingSpinner />}>
         <Chefs />
       </Suspense>
-      <About />
+      <About aboutRef={aboutRef}/>
       <Footer />
     </div>
   );

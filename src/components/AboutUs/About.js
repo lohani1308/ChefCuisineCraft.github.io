@@ -1,9 +1,9 @@
 import React from 'react';
 import './About.css'; // Import your CSS file for styling
 
-function About() {
+function About( {aboutRef} ) {
   return (
-    <div className="about-container">
+    <div ref={aboutRef} className="about-container">
       <div className="about-content">
         <h2>About Us</h2>
         <p>

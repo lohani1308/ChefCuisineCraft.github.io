@@ -65,7 +65,7 @@ const chefs=[
       "yearsOfExperience": 12,
       "numRecipes": 60,
       "likes": 180,
-      "chefPicture": "https://robohash.org/hicveldicta.png",
+      "chefPicture":"https://robohash.org/doloremquesintcorrupti.png",
       "recipes": [
         {
           "recipeName": "Spaghetti Carbonara",
@@ -126,7 +126,7 @@ const chefs=[
       "yearsOfExperience": 15,
       "numRecipes": 75,
       "likes": 220,
-      "chefPicture": "https://robohash.org/hicveldicta.png",
+      "chefPicture": "https://robohash.org/adverovelit.png",
       "recipes": [
         {
           "recipeName": "Spaghetti Carbonara",
@@ -187,7 +187,7 @@ const chefs=[
       "yearsOfExperience": 9,
       "numRecipes": 42,
       "likes": 135,
-      "chefPicture": "https://robohash.org/hicveldicta.png",
+      "chefPicture": "https://robohash.org/laboriosamfacilisrem.png",
       "recipes": [
         {
           "recipeName": "Spaghetti Carbonara",
@@ -248,7 +248,7 @@ const chefs=[
       "yearsOfExperience": 11,
       "numRecipes": 55,
       "likes": 160,
-      "chefPicture": "https://robohash.org/hicveldicta.png",
+      "chefPicture":"https://robohash.org/cupiditatererumquos.png",
       "recipes": [
         {
           "recipeName": "Spaghetti Carbonara",
@@ -309,7 +309,7 @@ const chefs=[
       "yearsOfExperience": 7,
       "numRecipes": 38,
       "likes": 105,
-      "chefPicture": "https://robohash.org/hicveldicta.png",
+      "chefPicture": "https://robohash.org/excepturiiuremolestiae.png",
       "recipes": [
         {
           "recipeName": "Spaghetti Carbonara",
@@ -370,7 +370,7 @@ const chefs=[
       "yearsOfExperience": 14,
       "numRecipes": 68,
       "likes": 200,
-      "chefPicture": "https://robohash.org/hicveldicta.png",
+      "chefPicture": "https://robohash.org/impeditautest.png",
       "recipes": [
         {
           "recipeName": "Spaghetti Carbonara",
@@ -431,7 +431,7 @@ const chefs=[
       "yearsOfExperience": 10,
       "numRecipes": 50,
       "likes": 150,
-      "chefPicture": "https://robohash.org/hicveldicta.png",
+      "chefPicture": "https://robohash.org/namquaerataut.png",
       "recipes": [
         {
           "recipeName": "Spaghetti Carbonara",
@@ -492,7 +492,7 @@ const chefs=[
       "yearsOfExperience": 6,
       "numRecipes": 32,
       "likes": 90,
-      "chefPicture": "https://robohash.org/hicveldicta.png",
+      "chefPicture":  "https://robohash.org/voluptatemsintnulla.png",
       "recipes": [
         {
           "recipeName": "Spaghetti Carbonara",
@@ -553,7 +553,7 @@ const chefs=[
       "yearsOfExperience": 13,
       "numRecipes": 62,
       "likes": 190,
-      "chefPicture": "https://robohash.org/hicveldicta.png",
+      "chefPicture": "https://robohash.org/quisequienim.png",
       "recipes": [
         {
           "recipeName": "Spaghetti Carbonara",

@@ -37,8 +37,8 @@
   }
   
   .carousel-image {
-    width: 100%; /* Set width to 100% of the carousel container */
-    height: 100%; /* Set height to 100% to maintain aspect ratio */
+    width: 90%; /* Set width to 100% of the carousel container */
+    height: 90%; /* Set height to 100% to maintain aspect ratio */
     object-fit: cover; /* Ensure images cover the entire carousel */
   }
   

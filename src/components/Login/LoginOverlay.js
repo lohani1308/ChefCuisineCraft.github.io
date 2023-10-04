@@ -34,6 +34,7 @@ function LoginOverlay({ onClose,setisOverlay,setLoggedin,setProfileName }) {
           if(email === values.email && password === values.password){
               setLoggedin(true);
               setProfileName(name);
+              setisOverlay(false);
           }
           else if(email !== values.email ||  password !== values.password){
             setMessage('Wrong Credientials....!');

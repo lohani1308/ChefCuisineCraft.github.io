@@ -60,7 +60,7 @@ input[type="password"] {
 
 .photo-label {
   cursor: pointer;
-  color: #007bff; /* Blue color for the file input label */
+  color: #ed9add; /* Blue color for the file input label */
 }
 
 .photo-preview {
@@ -81,13 +81,17 @@ input[type="password"] {
 }
 
 button[type="submit"] {
-  background-color: #007bff; /* Blue color for the submit button */
+  background-color: #ed9add; /* Blue color for the submit button */
   color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+}
+
+button[type="submit"]:hover{
+  background-color: rgb(139, 65, 139);
 }
 
 /* Add more styles as needed */
