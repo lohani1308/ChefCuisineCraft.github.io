@@ -3,11 +3,15 @@ import './ChefDetails.css';
 
 function ChefDetails({ chef, onClose }) {
   const [isLiked, setIsLiked] = useState(false);
+  const [showtoast,setshowToast]=useState(false);
 
   const handleLikeClick = () => {
+    setshowToast(true);
     setIsLiked(true);
   };
 
+  console.log(showtoast);
+  
   return (
     <div className="chef-details-overlay">
       <div className="chef-details-content">
@@ -48,6 +52,7 @@ function ChefDetails({ chef, onClose }) {
           ))}
         </ul>
       </div>
+      {showtoast && <div className='toast--message'>Added To your fav list</div>}
     </div>
   );
 }

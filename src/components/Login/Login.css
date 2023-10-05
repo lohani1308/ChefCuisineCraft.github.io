@@ -73,3 +73,16 @@ h2 {
 .button:hover {
   background-color: #d71fa3;
 }
+
+.registration-link{
+  border-top:none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #5e1949;
+  color: #5e1949;
+  cursor: pointer;
+}
+
+.registration-link:hover{
+  color: #da84c1;
+}

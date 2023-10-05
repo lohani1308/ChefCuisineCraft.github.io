@@ -1,94 +1,122 @@
 /* Navbar.css */
 
-.navbar--container{
+/* Light Theme */
+.navbar--container {
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
 .navbar {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(223, 167, 223);
-    color: black;
-    padding: 10px 20px;
-    height: 15vh;
-  }
-  
-  .navbar-logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(223, 167, 223);
+  color: black;
+  padding: 10px 20px;
+  height: 15vh;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6a1b9a; /* Purple color for logo */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  font-weight: bold; /* Make links bold */
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 20px;
+  transition: color 0.3s ease; /* Add a transition effect for smoother hover */
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+  color: #b74ea4; /* Change the color on hover to your desired color */
+}
+
+.navbar-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+/* Dark Theme for Navbar Only */
+.navbar.dark-theme {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Dark text color */
+}
+
+.navbar.dark-theme .navbar-logo {
+  color: #6a1b9a; /* Purple color for logo in dark theme */
+}
+
+.navbar.dark-theme .navbar-links a {
+  color: #fff; /* Dark text color for links in dark theme */
+}
+
+.theme-toggle {
+  cursor: pointer;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  background-color: #6a1b9a; /* Purple theme toggle button color */
+  color: #fff; /* Purple theme toggle button text color */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Hamburger Menu Styles (you can customize these) */
+@media (max-width: 768px) {
   .navbar-links {
-    display: flex;
-    gap: 20px;
-  }
-
-  .navbar-links a {
-    text-decoration: none;
-    color: #333;
-    margin: 0 20px;
-    transition: color 0.3s ease; /* Add a transition effect for smoother hover */
-  }
-  
-  .navbar-links a:hover {
-    text-decoration: underline;
-    color: #b74ea4; /* Change the color on hover to your desired color */
-  }
-
-  .navbar-profile img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-  
-  .hamburger {
     display: none;
     flex-direction: column;
-    cursor: pointer;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
   }
-  
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    margin: 3px 0;
-    transition: 0.4s;
+
+  .navbar-links.show-menu {
+    display: flex;
   }
-  
-  @media (max-width: 768px) {
-    .navbar-links {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-    }
-  
-    .navbar-links.show-menu {
-      display: flex;
-    }
-  
-    .hamburger {
-      display: flex;
-    }
-  
-    .bar.active:nth-child(1) {
-      transform: rotate(-45deg) translate(-5px, 6px);
-    }
-  
-    .bar.active:nth-child(2) {
-      opacity: 0;
-    }
-  
-    .bar.active:nth-child(3) {
-      transform: rotate(45deg) translate(-5px, -6px);
-    }
+
+  .hamburger {
+    display: flex;
   }
-  
+
+  .bar.active:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .bar.active:nth-child(2) {
+    opacity: 0;
+  }
+
+  .bar.active:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}

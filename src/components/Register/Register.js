@@ -5,7 +5,6 @@ function Register( {onClose} ) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [photo, setPhoto] = useState(null);
   const [errors, setErrors] = useState({});
   const [success,setSuccess]=useState(false);
 
@@ -14,7 +13,7 @@ function Register( {onClose} ) {
     const newErrors = {};
 
     // Check for empty fields
-    if (!name || !email || !password || !photo) {
+    if (!name || !email || !password) {
       newErrors.emptyFields = 'Please fill in all fields.';
     }
 
@@ -37,10 +36,7 @@ function Register( {onClose} ) {
     }
   };
 
-  const handlePhotoChange = (e) => {
-    const selectedPhoto = e.target.files[0];
-    setPhoto(selectedPhoto);
-  };
+
 
   const handleRegister=async()=>{
     const data=await fetch('https://chef-project-cfcc5-default-rtdb.firebaseio.com/users.json',{
@@ -51,8 +47,7 @@ function Register( {onClose} ) {
       body:JSON.stringify({
         name,
         email,
-        password,
-        photo
+        password
       })
       
     });
@@ -82,22 +77,6 @@ function Register( {onClose} ) {
             <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
             {errors.shortPassword && <div className="error">{errors.shortPassword}</div>}
           </div>
-          <div className="form-group">
-            <label className="photo-label">Upload Photo:</label>
-            <label htmlFor="photo" className="upload-button">
-              Choose File
-            </label>
-            <input
-              type="file"
-              id="photo"
-              className="file-input"
-              accept="image/*"
-              onChange={handlePhotoChange}
-            />
-          </div>
-          {photo && (
-            <img src={URL.createObjectURL(photo)} alt="Selected" className="photo-preview" />
-          )}
           {errors.emptyFields && <div className="error">{errors.emptyFields}</div>}
           <div className="button-container">
             <button type="submit" onClick={ handleRegister }>Sign Up</button>

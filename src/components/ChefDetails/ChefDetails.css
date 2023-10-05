@@ -134,3 +134,19 @@
     list-style-type: disc;
   }
   
+
+  .toast--message {
+    position: fixed;
+    top: 0;
+    right: 100px;
+    background-color: #b64cb6; /* Green background color */
+    color: #fff; /* White text color */
+    padding: 10px;
+    z-index: 1000; /* Ensure it's above other content */
+    transition: top 0.5s ease; /* Add a smooth transition effect */
+  }
+  
+  /* Add styles for hiding the toast message */
+  .toast--message.hidden {
+    top: -50px; /* Push it out of view */
+  }
