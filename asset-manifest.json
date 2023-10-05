@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ChefCuisineCraft.github.io/static/css/main.9cdf1f87.css",
+    "main.js": "/ChefCuisineCraft.github.io/static/js/main.4dab85a3.js",
+    "static/css/679.6d74cd6b.chunk.css": "/ChefCuisineCraft.github.io/static/css/679.6d74cd6b.chunk.css",
+    "static/js/679.b77b9d1b.chunk.js": "/ChefCuisineCraft.github.io/static/js/679.b77b9d1b.chunk.js",
+    "static/css/924.aa0abf79.chunk.css": "/ChefCuisineCraft.github.io/static/css/924.aa0abf79.chunk.css",
+    "static/js/924.65b814b0.chunk.js": "/ChefCuisineCraft.github.io/static/js/924.65b814b0.chunk.js",
+    "static/js/787.9b8f3236.chunk.js": "/ChefCuisineCraft.github.io/static/js/787.9b8f3236.chunk.js",
+    "static/media/chef8.jpg": "/ChefCuisineCraft.github.io/static/media/chef8.e0aaff7fed178774a02b.jpg",
+    "static/media/chef7.jpg": "/ChefCuisineCraft.github.io/static/media/chef7.bb62675149d63610817f.jpg",
+    "index.html": "/ChefCuisineCraft.github.io/index.html",
+    "main.9cdf1f87.css.map": "/ChefCuisineCraft.github.io/static/css/main.9cdf1f87.css.map",
+    "main.4dab85a3.js.map": "/ChefCuisineCraft.github.io/static/js/main.4dab85a3.js.map",
+    "679.6d74cd6b.chunk.css.map": "/ChefCuisineCraft.github.io/static/css/679.6d74cd6b.chunk.css.map",
+    "679.b77b9d1b.chunk.js.map": "/ChefCuisineCraft.github.io/static/js/679.b77b9d1b.chunk.js.map",
+    "924.aa0abf79.chunk.css.map": "/ChefCuisineCraft.github.io/static/css/924.aa0abf79.chunk.css.map",
+    "924.65b814b0.chunk.js.map": "/ChefCuisineCraft.github.io/static/js/924.65b814b0.chunk.js.map",
+    "787.9b8f3236.chunk.js.map": "/ChefCuisineCraft.github.io/static/js/787.9b8f3236.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9cdf1f87.css",
+    "static/js/main.4dab85a3.js"
+  ]
+}
